@@ -40,7 +40,8 @@ class PoundTest {
 		Pound p1 = new Pound(5,17,8);
 		Pound p2 = new Pound(3,4,10);
 		
-		Pound sum = p1.sum(p2);
+		OperationResult result = p1.sum(p2); 
+		Pound sum = result.getPound();
 
 		assertEquals(6, sum.getPence());		
 		assertEquals(2, sum.getShilling());
@@ -52,7 +53,7 @@ class PoundTest {
 		Pound p1 = new Pound(5,17,8);
 		Pound p2 = new Pound(3,4,10);
 		
-		Pound sub = p1.sub(p2);
+		Pound sub = p1.sub(p2).getPound();
 		
 		assertEquals(10, sub.getPence());		
 		assertEquals(12, sub.getShilling());
@@ -64,7 +65,7 @@ class PoundTest {
 		Pound p1 = new Pound(4,12,6);
 		Pound p2 = new Pound(4,19,11);
 		
-		Pound sum = p1.sub(p2);
+		Pound sum = p1.sub(p2).getPound();
 
 		assertEquals(7, sum.getPence());		
 		assertEquals(12, sum.getShilling());
@@ -75,7 +76,7 @@ class PoundTest {
 	void testMultiply() {
 		Pound p = new Pound(5,17,8);
 
-		Pound result = p.multiply(2);
+		Pound result = p.multiply(2).getPound();
 		
 		assertEquals(4, result.getPence());		
 		assertEquals(15, result.getShilling());
@@ -86,7 +87,7 @@ class PoundTest {
 	void testMultiply2() {
 		Pound p = new Pound(5,10,11);
 
-		Pound result = p.multiply(2);
+		Pound result = p.multiply(2).getPound();
 		
 		assertEquals(10, result.getPence());		
 		assertEquals(1, result.getShilling());

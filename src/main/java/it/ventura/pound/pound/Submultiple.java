@@ -8,7 +8,7 @@ public class Submultiple {
 	private int value;
 	private int rest;
 	
-	public Submultiple(String symbol, int limit, int value) {
+	protected Submultiple(String symbol, int limit, int value) {
 		this.symbol = symbol;
 		this.limit = limit;
 		this.value = value;
@@ -41,6 +41,12 @@ public class Submultiple {
 		setCarryOver();
 	}
 	
+	public void divide(int number, int over) {
+		int newValue = value + over*limit;
+		rest = newValue%number;
+		value = newValue/number;
+	}
+
 	public int getCarryOver() {
 		return carryOver;
 	}
@@ -61,13 +67,7 @@ public class Submultiple {
 		value = aValue;
 		setCarryOver();
 	}
-	
-	public void divide(int number, int over) {
-		int newValue = value + over*limit;
-		rest = newValue%number;
-		value = newValue/number;
-	}
-	
+		
 	public int getRest() {
 		return rest;
 	}

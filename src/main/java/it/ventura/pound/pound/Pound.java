@@ -40,7 +40,7 @@ public class Pound {
 		pence.setValue(penceValue);
 	}
 	
-	public Pound sum(Pound otherPound) {
+	public OperationResult sum(Pound otherPound) {
 		Pound sum = new Pound();
 		pence.add(otherPound.getPence());
 		sum.setPence(pence);
@@ -51,10 +51,10 @@ public class Pound {
 		setValue(value + otherPound.getValue() + shilling.getCarryOver());
 		sum.setValue(value);
 		
-		return sum;
+		return new OperationResult(sum, 0);
 	}
 	
-	public Pound sub(Pound otherPound) {
+	public OperationResult sub(Pound otherPound) {
 		Pound sub = new Pound();
 		if (pence.getValue() < otherPound.getPence()) {
 			shilling.setValue(shilling.getValue() -1);			
@@ -69,10 +69,10 @@ public class Pound {
 		sub.setShilling(shilling);
 		sub.setValue(value - otherPound.getValue());
 		
-		return sub;
+		return new OperationResult(sub, 0);
 	}
 	
-	public Pound multiply(int factor) {
+	public OperationResult multiply(int factor) {
 		Pound mult = new Pound();
 		pence.multiply(factor);
 		mult.setPence(pence);
@@ -84,7 +84,7 @@ public class Pound {
 		value = value*factor + shilling.getCarryOver();
 		mult.setValue(value);
 		
-		return mult;
+		return new OperationResult(mult, 0);
 	}
 	
 	public OperationResult divide(int number) {
@@ -132,9 +132,10 @@ public class Pound {
 		return pence.getValue();
 	}
 	
+	/*
 	public void display() {
 		System.out.println(toString());
-	}
+	}*/
 
 	private void initialize() {
 		this.value = 0;
