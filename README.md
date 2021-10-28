@@ -19,6 +19,10 @@ It is possible create a Pound instance using this constructor:
 >Pound myPound = new Pound("12p 6s 10d");
 >System.out.println(myPound.toString());
 
+- Operations
+All operations return an OperationResult Object. You can display it using method toString. With method getPound() you can retrieve the Pound inside the operation.
+Please view it.ventura.pound.oldfashion.Main.java for examples of use
+
 
 
 ## For running the program are needed:
