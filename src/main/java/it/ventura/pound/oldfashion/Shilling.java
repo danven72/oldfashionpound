@@ -1,4 +1,4 @@
-package it.ventura.pound.pound;
+package it.ventura.pound.oldfashion;
 
 public class Shilling extends Submultiple {
 	

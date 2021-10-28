@@ -6,9 +6,8 @@
 
 	<groupId>it.ventura.pound</groupId>
 	<artifactId>pound</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>pound</name>
-	<url>http://www.example.com</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

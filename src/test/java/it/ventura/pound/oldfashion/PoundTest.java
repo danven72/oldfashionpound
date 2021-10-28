@@ -1,9 +1,12 @@
-package it.ventura.pound.pound;
+package it.ventura.pound.oldfashion;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
+
+import it.ventura.pound.oldfashion.OperationResult;
+import it.ventura.pound.oldfashion.Pound;
 
 class PoundTest {
 

@@ -1,5 +1,4 @@
-package it.ventura.pound.pound;
-
+package it.ventura.pound.oldfashion;
 public class Main {
 	
 	public static void sumExample1() {

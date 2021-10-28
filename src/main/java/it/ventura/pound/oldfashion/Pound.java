@@ -1,4 +1,4 @@
-package it.ventura.pound.pound;
+package it.ventura.pound.oldfashion;
 
 public class Pound {
 	
@@ -132,11 +132,6 @@ public class Pound {
 		return pence.getValue();
 	}
 	
-	/*
-	public void display() {
-		System.out.println(toString());
-	}*/
-
 	private void initialize() {
 		this.value = 0;
 		this.symbol = "p";

@@ -1,8 +1,10 @@
-package it.ventura.pound.pound;
+package it.ventura.pound.oldfashion;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
+
+import it.ventura.pound.oldfashion.Submultiple;
 
 class SubmultipleTest {
 
