@@ -27,7 +27,7 @@ Please view it.ventura.pound.oldfashion.Main.java for examples of use
 
 
 
-## For running the program are needed:
+## For running the program you need:
 - Java 11
 - Maven (for running unit test)
 
